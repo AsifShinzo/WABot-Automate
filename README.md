@@ -1,38 +1,42 @@
+## WhatsApp Bot - Simplify and Automate Your WhatsApp Experience
 
-# WhatsApp Bot
+This project offers a simple yet powerful WhatsApp bot built in JavaScript, designed to streamline your daily tasks. Using the **@whiskeysockets/baileys** library, it leverages WebSocket connections for enhanced performance without relying on Puppeteer or Chromium.
 
-A powerful and customizable WhatsApp bot built with Node.js and @whiskeysockets/baileys
+### Key Features
 
-## Getting Started
-
-Follow these instructions to set up and run your WhatsApp bot on your local machine or vps.
-
+- **Automate repetitive tasks** to enhance your WhatsApp experience.
+- Built using the **Baileys library**, a feature-rich solution that directly operates on WebSockets.
+  
 ### Prerequisites
 
-Make sure you have the following installed:
+Ensure you have the following installed on your system:
 
-- **Node.js LTS** (v20 or later)
-- **FFmpeg** (for media processing)
-- **Git**
-- **PM2** (optional, for running the bot in production mode)
+- **Node.js LTS (v20 or later)** for executing JavaScript code
+- **FFmpeg** to process media files
+- **Git** for managing the project repository
+- **PM2** (optional) for efficient production deployment
 
-### Installation
+### Setup Guide
 
-1. **Clone the repository:**
+1. **Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/ShibamDey69/WhatsApp-Bot
-   ```
-
-2. **Navigate to the project directory:**
+   Begin by cloning the project from GitHub:
 
    ```bash
-   cd WhatsApp-Bot
+   git clone https://github.com/AsifShinzo/WABot-Automate
    ```
 
-3. **Update the configuration:**
+2. **Navigate to the Project Directory:**
 
-   Open the `src/config.json` file and add your owner numbers:
+   Move into the project folder:
+
+   ```bash
+   cd WABot-Automate
+   ```
+
+3. **Update Configuration:**
+
+   Open the `src/config.json` file and update it with your owner numbers:
 
    ```json
    {
@@ -40,31 +44,32 @@ Make sure you have the following installed:
    }
    ```
 
-   Replace `YOUR_NUMBER` and `ANOTHER_NUMBER` with the actual WhatsApp numbers that should have owner permissions.
+   Replace `"YOUR_NUMBER"` and `"ANOTHER_NUMBER"` with the actual WhatsApp numbers that should have admin privileges.
 
 ### Running the Bot
 
-You can start the bot using either Node.js directly or with PM2 for production.
+You have two options to run the bot: directly using Node.js or using PM2 for a more robust production environment.
 
-#### 1. Simple Node.js
+#### 1. Run with Node.js:
 
    ```bash
-   export SHIBAM && node src/index.js BOT_NUMBER
+   export asif && node src/index.js BOT_NUMBER
    ```
 
-#### 2. Using PM2 (recommended for production)
+   Replace `BOT_NUMBER` with the actual bot's phone number.
+
+#### 2. Run with PM2 (Recommended for Production):
 
    ```bash
    pm2 start ecosystem.config.js -- BOT_NUMBER
    ```
 
-   Replace `BOT_NUMBER` with the actual number assigned to the bot.
+   This method ensures the bot stays online, even after closing your terminal.
 
-### Additional Information
+### Key Files
 
-- **src/config.json**: Configuration file for the bot, where you can add owner numbers and other settings.
+- **src/config.json**: Contains the configuration details like owner numbers and other customizable settings.
 
 ### License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
