@@ -1,0 +1,34 @@
+{
+  "name": "NekoBot",
+  "version": "1.0.0",
+  "author": "ShibamDey69",
+  "main": "src/index.js",
+  "description": "A normal but powerful whatsapp bot",
+  "keywords": [],
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@shibam/sticker-maker": "^1.1.14",
+    "@whiskeysockets/baileys": "^6.7.7",
+    "axios": "^1.7.5",
+    "cli-color": "^2.0.4",
+    "dotenv": "^16.4.5",
+    "events": "^3.3.0",
+    "figlet": "^1.7.0",
+    "file-type": "^19.4.1",
+    "form-data": "^4.0.0",
+    "hercai": "^12.3.2",
+    "instagram-url-direct": "^1.0.20",
+    "node-cron": "^3.0.3",
+    "pino": "^8.21.0",
+    "qs": "^6.13.0",
+    "retry": "^0.13.1",
+    "stream": "^0.0.2",
+    "uuid": "^9.0.1",
+    "ws": "^8.18.0",
+    "yt-search": "^2.12.1"
+  },
+  "devDependencies": {
+    "pino-pretty": "^11.2.2"
+  }
+}
